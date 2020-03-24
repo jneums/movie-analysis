@@ -1,0 +1,23 @@
+{
+  "name": "keyword_builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "download-db": "./scripts/download_db.sh",
+    "build-dependencies": "python ./scripts/build_imdb_ids.py",
+    "start": "npm run build-dependencies && node --max-old-space-size=8192 index.js && npm run download-db",
+    "dev": "node --max-old-space-size=8192 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.9.5",
+    "prettier": "^1.19.1",
+    "throttled-queue": "^1.0.7",
+    "underscore": "^1.9.2"
+  }
+}
