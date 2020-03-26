@@ -125,7 +125,7 @@ async function saveIdAndKeywords(ImdbId) {
     if (!movie.keywords["keywords"]) return;
     movie.keywords["keywords"].forEach(async entry => {
       const newKeyword = new Keyword({
-        imdbId: ImdbId,
+        imdbId: movie.imdb_id,
         keywordId: entry["id"],
         keyword: entry["name"]
       });
