@@ -3,38 +3,44 @@
 
 This project was created to advise new and emerging movie studios on the key insights required to release succesful movies. Although far from definitive, the insights below are enough to ensure a high revenue generating title or franchise of titles.
 
+[Click here for online non-technical presentation](https://spark.adobe.com/page/aYgVAoMjU9YMa/)
+
+
 The data was gathered from a variety of sources including:
-- IMDB.com (public datasets)
-- IMDBPro.com (web scraping)
-- TheMovieDB.org (API calls)
+- [IMDB's public datasets](https://www.imdb.com/interfaces/)
+- [IMDB Pro's list of movies with revenue](https://pro.imdb.com/)
+- [TheMovieDB.org public API](https://developers.themoviedb.org/3/getting-started/introduction)
 
 
 ## Project Outline
 ------------
 
     ├── LICENSE
-    ├── README.md          <- The project layout (this file)
+    ├── README.md                  <- The project layout (this file)
     ├── data
-    │   ├── images         <- For README.md
-    │   ├── external       <- Data from imdbpro
-    │   ├── interim        <- Intermediate data that has been transformed
-    │   ├── processed      <- The final, canonical data sets for analysis
-    │   └── raw            <- The original, immutable data dump
+    │   ├── images                 <- For README.md and presentation
+    │   ├── external               <- Data from imdbpro
+    │   ├── interim                <- Intermediate data that has been transformed
+    │   ├── processed              <- The final, canonical data sets for analysis
+    │   └── raw                    <- The original, immutable data dump
     │
-    ├── notebooks          <- Jupyter notebooks
+    ├── notebooks                  <- Jupyter notebooks
+    │   └── data_obtaining.ipynb   <- Process for obtaining desired data points
+    │   └── data_scrubbing.ipynb   <- Process for cleaning the data
+    │   └── eda.ipynb              <- Process for exploring and analyzing the data
     │
-    ├── reports            <- Reports and presentations
-    │   └── presentation.pdf        <- Non-technical presentation
-    │   └── blog.md                 <- Blog post
-    │   └── video_walkthrough       <- Link to video walkthrough
+    ├── reports                    <- Reports and presentations
+    │   └── presentation.pdf       <- Non-technical presentation
+    │   └── blog.md                <- Blog post
+    │   └── video_walkthrough      <- Link to video walkthrough
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment
+    ├── requirements.txt           <- The requirements file for reproducing the analysis environment
     │
-    └── src                <- Source code for use in this project.
-        ├── __init__.py    <- Makes src a Python module
+    └── src                        <- Source code for use in this project.
+        ├── __init__.py            <- Makes src a Python module
         │
-        └── data           <- Scripts to download or generate data
-            └── keyword_builder
+        └── data                   <- Scripts to download or generate data
+            └── keyword_builder    <- node.js program to query API and save results in mongodb
 
 --------
 
@@ -65,7 +71,11 @@ There are several recommendations that can be extracted from the data analysis, 
 
 ## Conclusions
 ------------
-In conclusion, if you would like the highest probability of creating a high revenue film or series of films, follow the preceeding steps. 
+In conclusion, if you would like the highest probability of creating a high revenue film or series of films, follow these steps:
+1. Choose from the list of most popular genres
+2. Choose the appropriate director for the genres you chose 
+3. Release the film in the appropriate month
+4. Add in elements matching the top keywords
 
 
 
