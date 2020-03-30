@@ -9,7 +9,8 @@
 
 This project was created to advise new and emerging movie studios on the key insights required to release succesful movies. Although far from definitive, the insights below are enough to ensure a high revenue generating title or franchise of titles.
 
-[Click here for online non-technical presentation](https://spark.adobe.com/page/aYgVAoMjU9YMa/)
+[Click here for online non-technical presentation](https://youtu.be/T50n8S4SBzs)
+
 
 
 The data was gathered from a variety of sources including:
