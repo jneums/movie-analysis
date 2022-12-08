@@ -9,7 +9,7 @@ boto==2.49.0
 boto3==1.9.234
 botocore==1.12.234
 bz2file==0.98
-certifi==2019.11.28
+certifi==2022.12.7
 cffi==1.12.3
 chardet==3.0.4
 cryptography==2.7
